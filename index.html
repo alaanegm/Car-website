@@ -1,0 +1,584 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body onload="myFunction()" id="body1">
+  <div class="loader" id="loader">
+</div>
+  <main class="overflow-hidden" style="display:none;" id="myDiv">
+
+
+    <header class="">
+      <nav class="navbar navbar-expand-lg col-12">
+        <div class="container col-md-11 col-6">
+            <!-- left -->
+            <div class="collapse navbar-collapse order-lg-1 order-3" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link text-white" aria-current="page" href="#"><i class="bi bi-telephone"></i>+1 631 123 4567
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white">Browse Products</a>
+                  </li>
+                </ul>
+              </div>
+               <!-- left -->
+          <a class="navbar-brand order-1" href="#"><img src="images/logo.png" alt="logo"></a>
+          <button class="navbar-toggler order-2 d-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+           <!-- right -->
+           <div class="collapse navbar-collapse order-lg-3 order-4" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Customer Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white">Contact Us</a>
+              </li>
+            </ul>
+            <div class="icons">
+              <ul class="list-unstyled m-0 ">
+                  <a class="text-white m-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a class="text-white m-2" href="#"><i class="fab fa-twitter"></i></a>
+                  <a class="text-white m-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a class="text-white m-2" href="#"><i class="fab fa-instagram"></i></a>
+              </ul>
+          </div>
+          </div>
+           <!-- right -->
+          
+        </div>
+        <div class="col-md-1 text-end p-3 col-6">
+          <button class="sidemenu_btn d-inline-block  order-5" type="button" 
+        data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <span></span><span></span><span></span>
+         </button>
+        </div>
+      </nav>
+      <div class="modal nav-modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content  nav-modal1">
+            <div class="modal-header "> 
+                
+              <button type="button" class="btn-close btn " data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body row align-content-center justify-content-between">
+                <div class="col-12">
+                  <ul class="navbar-nav p-5">
+                    <li class="nav-item text-white ">
+                        <a class="nav-link text-white fs-4 my-1  d-inline-block" href="#slider-area">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-4 my-1 d-inline-block" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-4 my-1 d-inline-block" href="#all-products">Browse Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-4 my-1 d-inline-block" href="#reviews">Customer Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-4 my-1 d-inline-block" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+                </div>
+            <div class="side-footer w-100 text-white fs-6 col-12 p-5">
+                <p>© 2020 MegaOne. Made With Love by Themesindustry</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container position-relative">
+        <div class="row align-items-center  content-header"> 
+          <div class="col-lg-6 block my-3 text-center text-lg-start wow slideInLeft"
+          data-wow-duration="2s" data-wow-delay="1s">
+            <h1 class="text-white fs-1 fw-bolder my-3">Premium</h1>
+          <h2 class="fs-1 fw-bold my-3">Auto Accessories</h2>
+          <p class="text-white fs-5 my-3">Lorem ipsum is simply dummy text of the printing and typesetting. 
+            Lorem Ipsum has been the industry’s standard dummy.</p>
+            <button type="button" class="btn btn-danger w-50 p-3 my-4">Learn More</button>
+          </div>
+          <div class="col-lg-6 block position-relative wow slideInRight"
+          data-wow-duration="2s" data-wow-delay="1s"> 
+            <img src="images/banner-product.png" alt="img">
+            <div class="circle-one animated-circle">
+              <div class="pop text-center">
+                  <span class="text-center">Side Mirror</span>
+              </div>
+            </div>
+            <div class="circle-two animated-circle">
+             <div class="pop text-center">
+                 <span class="text-center">Glass Roof</span>
+             </div>
+           </div>
+           <div class="circle-three animated-circle">
+             <div class="pop text-center">
+                 <span class="text-center">Back Light</span>
+             </div>
+           </div>
+           <div class="circle-four animated-circle">
+             <div class="pop text-center">
+                 <span class="text-center">Front Bumper</span>
+             </div>
+           </div>
+           <div class="circle-five animated-circle">
+             <div class="pop text-center">
+                 <span class="text-center">Side Skits</span>
+             </div>
+           </div>
+          </div>
+        </div>
+        
+      </div>
+
+    </header>
+    <!-- //////////////////////////////////////////////////////////////////// -->
+    <section class="">
+      <div class="container">
+        <div class="row justify-content-center content-about align-items-center">
+          <div class="block-about col-12 text-center">
+           <h1 class="text-white fw-bolder">Know About</h1>
+           <h2 class=" fw-bold">Auto Accessories</h2>
+           <p class="text-white fs-5">Lorem ipsum is simply dummy text of the printing and typesetting. 
+            <span class="text-white fs-5 d-block">Lorem Ipsum has been the industry’s standard dummy.</span></p>   
+          </div>
+          </div>
+          <div class="block-img col-12 row justify-content-between overflow-hidden">
+            <div class="col-md-4 block1 my-3">
+              <div class="col-12 overflow-hidden">
+                <img src="images/about-img-1.jpg" alt="img" class="w-100">
+              </div>
+              <div class="col-12">
+                       <h3 class="text-white fw-bolder my-4">Customer Satisfaction</h3>
+                       <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris arcu.</p>
+                       <a href="#" class="text-decoration-none text-white">Learn More</a>
+              </div>
+            </div>
+            <div class="col-md-4 block1 my-3">
+              <div class="col-12 overflow-hidden">
+                <img src="images/about-img-2.jpg" alt="img" class="w-100">
+              </div>
+              <div class="col-12">
+                       <h3 class="text-white fw-bolder my-4">Auto Trends 2020</h3>
+                       <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris arcu.</p>
+                       <a href="#" class="text-decoration-none text-white">Learn More</a>
+              </div>
+            </div>
+            <div class="col-md-4 block1 my-3">
+              <div class="col-12 overflow-hidden">
+                <img src="images/about-img-3.jpg" alt="img" class="w-100">
+              </div>
+              <div class="col-12 overflow-hidden">
+                       <h3 class="text-white fw-bolder my-4">Expert Team</h3>
+                       <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris arcu.</p>
+                       <a href="#" class="text-decoration-none text-white">Learn More</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <!-- ///////////////////////////////////////////////// -->
+   <div class="sec2" >
+      <div class="container  position-relative">
+        <div class="row col-12 content-sec2 text-center my-3">
+          <h1 class="text-white fw-bolder">Accessories</h1>
+          <h2 class=" fw-bolder">Latest Products</h2>
+        </div>
+        <div class="images-carousel col-12">
+          <div class=" owl-products owl-carousel owl-theme">
+            <div class="item row  justify-content-center">
+              <div class="team-img ">
+                <img src="images/product-img1.png" alt="img">
+              </div>
+              <div class="team-text text-center my-3">
+                <h5 class="text-white fs-3 my-3">Imported Car Tire Wheel</h5>
+                <a class="btn btn-medium  btn-danger text-capitalize fs-4"
+                data-bs-toggle="modal" data-bs-target="#exampleModal3">View Detail</a>
+               </div>
+            </div>
+            <div class="item  row  justify-content-center">
+              <div class="team-img">
+                <img src="images/product-img2.png" alt="img">
+              </div>
+              <div class="team-text text-center my-3">
+                <h5 class="text-white fs-2 my-3">Tire Alloy Rims</h5>
+                <a class="btn btn-medium  btn-danger text-capitalize fs-4"
+                data-bs-toggle="modal" data-bs-target="#exampleModal2">View Detail</a>
+               </div>
+            </div>
+            <div class="item  row  justify-content-center">
+              <div class="team-img ">
+                <img src="images/product-img3.png" alt="img">
+              </div>
+              <div class="team-text text-center my-3">
+                <h5 class="text-white fs-3 my-3">Engine Suspension</h5>
+                <a class="btn btn-medium  btn-danger text-capitalize fs-4"
+                 data-bs-toggle="modal" data-bs-target="#exampleModal1">View Detail</a>
+               </div>
+            </div>
+          </div>
+          <a class='prev arrow' id="team-circle-left"> <i class="fas fa-chevron-left"></i></a>
+          <a class='next arrow' id="team-circle-right"><i class="fas fa-chevron-right"></i></a>
+         </div> 
+      </div>
+      <!-- Button trigger modal -->
+     </div>
+  <!-- ///////////////////////////////////////////////////// -->
+  <div class="sec3">
+    <div class="container">
+      <div class="row justify-content-center align-content-center sec3-content text-md-start text-center">
+          <div class="col-md-6 my-3">
+            <p class="text-secondary fs-5 display-3">Let us show you some stats</p>
+            <h5 class="text-white fs-1 fw-bold my-3">Check our numbers
+              <span class="d-block">over the past few years.</span> </h5>
+              <p class="text-secondary fs-5 display-3">There are many variations of passages of Lorem Ipsum available,
+                 but the majority have suffered alteration in some form, by injected .</p>
+          </div>
+          <div class="col-md-6 row  align-content-center px-4 my-4">
+            <div class="col-md-4 my-3">
+              <h2 class=" text-primary fs-1 value" akhi="456">0</h2>
+              <h5 class="text-white fs-6">Products Delivered</h5>
+            </div>
+            <div class="col-md-4 my-3">
+              <h2 class=" text-danger fs-1 value" akhi="599">0</h2>
+              <h5 class="text-white fs-6">Happy Customers</h5>
+            </div>
+            <div class="col-md-4 my-3">
+              <h2 class=" text-primary fs-1 value" akhi="780">0</h2>
+              <h5 class="text-white fs-6">Hours Worked</h5>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+<!-- ////////////////////////////////////////////////////////////////////// -->
+  <div class="sec4">
+    <div class="container">
+    <div class="row col-12 content-sec2 text-center my-3">
+      <h1 class="text-white fw-bolder">Best in Business</h1>
+      <h2 class=" fw-bolder">Happy Customers</h2>
+    </div>
+    <div class="col-12">
+      <div class="owl-carousel owl-theme ">
+        <div class="item1 px-4">
+          <div class="text-center my-3">
+            <p><i class="fas fa-quote-left fs-1"></i></p>
+            <p class="text-white paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris arcu.</p>
+           
+           </div>
+           <div class="team-sec4 row justify-content-center">
+            <img src="images/testimonial-1.png" alt="img" class="w-25 my-4">
+            <h3 class="text-center text-danger fs-5">David Miller</h3>
+          </div>
+        </div>
+        <div class="item1 px-4">
+          <div class="text-center my-3">
+            <p><i class="fas fa-quote-left fs-1"></i></p>
+            <p class="text-white paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+           
+           </div>
+           <div class="team-sec4 row justify-content-center">
+            <img src="images/testimonial-2.png" alt="img" class="w-25 my-4">
+            <h3 class="text-center text-danger fs-5">Alex Jackson</h3>
+          </div>
+        </div>
+        <div class="item1 px-4">
+          <div class="text-center my-3">
+            <p><i class="fas fa-quote-left fs-1"></i></p>
+            <p class="text-white paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris arcu.</p>
+           
+           </div>
+           <div class="team-sec4 row justify-content-center">
+            <img src="images/testimonial-3.png" alt="img" class="w-25 my-4">
+            <h3 class="text-center text-danger fs-5">Mark Anthony</h3>
+          </div>
+        </div>
+        <div class="item1  px-4">
+          <div class="text-center my-3">
+            <p><i class="fas fa-quote-left fs-1"></i></p>
+            <p class="text-white paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+           
+           </div>
+           <div class="team-sec4 row justify-content-center">
+            <img src="images/testimonial-4.png" alt="img" class="w-25 my-4">
+            <h3 class="text-center text-danger fs-5">Kelly Smith</h3>
+          </div>
+        </div>
+       
+        
+      </div>
+    </div> 
+    </div>
+    </div> 
+    <!-- /////////////////////////////////////////////// -->
+    <div class="sec5">
+      <div class="container">
+            <div class="row col-12 content-sec2  my-5">
+              <h1 class="text-white fw-bolder">Questions?</h1>
+              <h2 class=" fw-bolder">Lets Get In Touch</h2>
+            </div>
+            <div class="col-12 row align-content-center  sec5-content">
+              <div class="col-md-6 form-sec5 my-3 wow slideInLeft"  data-wow-duration="2s" data-wow-delay="5s">
+                <form>
+                  <div class="col-9">
+                        <input type="text" name="userName" placeholder="Name" class="form-control my-3">
+                        <input type="text" name="userPhone" placeholder="Contact No" class="form-control my-3">
+                        <input type="email" name="userEmail" placeholder="Email" class="form-control my-3">
+                        <textarea class="form-control my-3" name="userMessage" rows="6" placeholder="Type Your Message Here"></textarea>
+                        <a href="#" class="btn btn-medium  text-white bg-danger  w-100 p-2 btn-sec5 text-uppercase  fs-5 my-3">Submit Information</a>
+                  </div>
+                </form>
+              </div>
+             <div class="col-md-6 my-3 wow  slideInRight" data-wow-duration="2s" data-wow-delay="5s">
+               <h3 class="text-white mb-4">Store Location</h3>
+               <p class="text-white fs-5 my-5">There are many variations of passages of Lorem Ipsum available, 
+                 but the majority have suffered .</p>
+               <ul class="list-unstyled">
+                 <li class="text-white fs-5 mb-4"><i class="fas fa-map-marker-alt fs-3 me-3" ></i> 123 Park Avenue, New
+                   <span class="d-block mx-5">York, United States</span></li>
+                 <li class="text-white fs-5 mb-4"><i aria-hidden="true" class="fas fa-phone-volume fs-3 me-3"></i>
+                  <span>+1 631 1234 5678</span>
+                  <span>+1 631 1234 5678</span>
+                 </li>
+              <li class="text-white fs-5 mb-4"><i aria-hidden="true" class="fas fa-paper-plane fs-3 me-3"></i>email@website.com</li>
+               </ul>
+               <div class=" icons">
+                  <ul class="list-unstyled d-flex">
+                    <li class="mx-3 text-white "><i class="fab fa-facebook-f fs-5"></i></li>
+                    <li class="mx-3 text-white"><i class="fab fa-twitter fs-5"></i></li>
+                    <li class="mx-3 text-white"><i class="fab fa-linkedin-in fs-5"></i></li>
+                    <li class="mx-3 text-white"><i class="fab fa-instagram fs-5"></i></li>
+                    <li class="mx-3 text-white"><i class="fab fa-pinterest-p fs-5"></i></li>
+                    <li class="mx-3 text-white"><i class="fab fa-google-plus-g fs-5"></i></li>
+                  </ul>
+               </div>
+             </div>
+            
+            </div>
+            
+      </div>
+    </div>
+      <footer class="text-center">
+         <p class="fs-5 text-secondary">© 2021. Made With Love by alaa negm</p>
+        
+        
+      </footer>
+      <!-- Modal -->
+<div class="model">
+  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content bg-black">
+        <div class="modal-header">
+          <button type="button" class="close py-1" data-bs-dismiss="modal" aria-label="Close">
+            <i class="bi bi-x"></i></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row section2 align-content-center">
+              <div class="col-md-6 section1">
+                <div class="images-owl ">
+                  <img src="images/product-img3.png" class="d-block w-75">
+              </div>
+              
+            </div>
+            <div class="col-md-6 ms-auto  section1">
+              <div class="">
+                <div class="col-12 p-3">
+                  <p class="text-white fs-3 my-3">Article PZ-1000-23</p>
+                  <h5 class="modal-title text-white fs-2 my-3 fw-bold" id="exampleModalLabel">Engine Suspension</h5>
+                  <p class="text-white fs-5 my-3">Lorem ipsum is simply dummy text of the printing and typesetting.
+                    Lorem Ipsum has been the industry’s standard dummy.</p>
+                    <div class="col-12 size1 row my-3">
+                      <div class="col-3">
+                        <h6 class="text-white text-center fs-5">Size:</h6>
+                      </div>
+                     <div class="col-9">
+                      <a class="active text-white text-decoration-none fs-5 mx-2">155/75</a>
+                      <a class="text-white text-decoration-none fs-5 mx-2">165/75</a>
+                      <a class="text-white text-decoration-none fs-5 mx-2">185/75</a>
+                      <a class="text-white text-decoration-none fs-5 mx-2">210/75</a>
+                     </div>
+                    </div>
+                    <div class="col-12 count row">
+                      <div class="col-3">
+                        <h6 class="text-center text-white fs-5">Qty:</h6>
+                      </div>
+                     <div class="col-9 input1">
+                      <!-- <span class="minus text-white"><i class="bi bi-dash"></i></span> -->
+                      <input type="number" size="4" class="count1 text-white" name="qty" value="1" min="0">
+                      <!-- <span class="plus text-white"><i class="bi bi-plus"></i></span> -->
+                     </div>
+                    </div>
+                   <div class="col-9 mx-3">
+                    <h3 class="text-white fs-2 fw-bold">$299.00</h3>
+                    <a class="btn btn-medium  btn-danger text-capitalize fs-4 my-3"
+                           data-bs-toggle="modal" data-bs-target="#exampleModal1">Buy Now</a>
+                   </div>
+                  </div>
+               </div> 
+              
+            </div>
+          </div>
+        </div>
+          
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Modal 2222-->
+<div class="model">
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content bg-black">
+        <div class="modal-header">
+          <button type="button" class="close py-1" data-bs-dismiss="modal" aria-label="Close">
+            <i class="bi bi-x"></i></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row section2 align-content-center">
+              <div class="col-md-6 section1">
+                <div class="images-owl ">
+                  <img src="images/product-img2.png" class="d-block w-75 m-5">
+              </div>
+              
+            </div>
+            <div class="col-md-6 ms-auto  section1">
+              <div class="">
+                <div class="col-12 p-3">
+                  <p class="text-white fs-3 my-3">Article PZ-1000-23</p>
+                  <h5 class="modal-title text-white fs-2 my-3 fw-bold" id="exampleModalLabel">Imported Car Tire</h5>
+                  <p class="text-white fs-5 my-3">Lorem ipsum is simply dummy text of the printing and typesetting.
+                    Lorem Ipsum has been the industry’s standard dummy.</p>
+                    <div class="col-12 size1 row my-3">
+                      <div class="col-3">
+                        <h6 class="text-white text-center fs-5">Size:</h6>
+                      </div>
+                     <div class="col-9">
+                      <a class="active text-white text-decoration-none fs-5 mx-2">155/75</a>
+                      <a class="text-white text-decoration-none fs-5 mx-2">165/75</a>
+                      <a class="text-white text-decoration-none fs-5 mx-2">185/75</a>
+                      <a class="text-white text-decoration-none fs-5 mx-2">210/75</a>
+                     </div>
+                    </div>
+                    <div class="col-12 count row">
+                      <div class="col-3">
+                        <h6 class="text-center text-white fs-5">Qty:</h6>
+                      </div>
+                     <div class="col-9 input1">
+                      <!-- <span class="minus text-white"><i class="bi bi-dash"></i></span> -->
+                      <input type="number" size="4" class="count1 text-white" name="qty" value="1" min="0">
+                      <!-- <span class="plus text-white"><i class="bi bi-plus"></i></span> -->
+                     </div>
+                    </div>
+                   <div class="col-9 mx-3">
+                    <h3 class="text-white fs-2 fw-bold">$299.00</h3>
+                    <a class="btn btn-medium  btn-danger text-capitalize fs-4 my-3"
+                           data-bs-toggle="modal" data-bs-target="#exampleModal1">Buy Now</a>
+                   </div>
+                  </div>
+               </div> 
+              
+            </div>
+          </div>
+        </div>
+          
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Modal 33333-->
+<div class="model">
+  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content bg-black">
+        <div class="modal-header">
+          <button type="button" class="close py-1" data-bs-dismiss="modal" aria-label="Close">
+            <i class="bi bi-x"></i></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row section2 align-content-center">
+              <div class="col-md-6 section1">
+                <div class="images-owl ">
+                  <img src="images/product-img1.png" class="d-block w-75 m-5">
+              </div>
+              
+            </div>
+            <div class="col-md-6 ms-auto  section1">
+              <div class="">
+                <div class="col-12 p-3">
+                  <p class="text-white fs-3 my-3">Article PZ-1000-23</p>
+                  <h5 class="modal-title text-white fs-2 my-3 fw-bold" id="exampleModalLabel">Imported Car Tire</h5>
+                  <p class="text-white fs-5 my-3">Lorem ipsum is simply dummy text of the printing and typesetting.
+                    Lorem Ipsum has been the industry’s standard dummy.</p>
+                    <div class="col-12 size1 row my-3">
+                      <div class="col-3">
+                        <h6 class="text-white text-center fs-5">Size:</h6>
+                      </div>
+                     <div class="col-9">
+                      <a class="active text-white text-decoration-none fs-5 mx-2">155/75</a>
+                      <a class="text-white text-decoration-none fs-5 mx-2">165/75</a>
+                      <a class="text-white text-decoration-none fs-5 mx-2">185/75</a>
+                      <a class="text-white text-decoration-none fs-5 mx-2">210/75</a>
+                     </div>
+                    </div>
+                    <div class="col-12 count row">
+                      <div class="col-3">
+                        <h6 class="text-center text-white fs-5">Qty:</h6>
+                      </div>
+                     <div class="col-9 input1">
+                      <!-- <span class="minus text-white"><i class="bi bi-dash"></i></span> -->
+                      <input type="number" size="4" class="count1 text-white" name="qty" value="1" min="0">
+                      <!-- <span class="plus text-white"><i class="bi bi-plus"></i></span> -->
+                     </div>
+                    </div>
+                   <div class="col-9 mx-3">
+                    <h3 class="text-white fs-2 fw-bold">$299.00</h3>
+                    <a class="btn btn-medium  btn-danger text-capitalize fs-4 my-3"
+                           data-bs-toggle="modal" data-bs-target="#exampleModal1">Buy Now</a>
+                   </div>
+                  </div>
+               </div> 
+              
+            </div>
+          </div>
+        </div>
+          
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <script src="js/bootstrap.bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/wow.min.js"></script>
+    <script src="js/myscript.js"></script>
+</body>
+</html>
